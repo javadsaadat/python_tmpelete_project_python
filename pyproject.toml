@@ -1,7 +1,8 @@
-
 [tool.isort]
-profile = "black"
+profile = "black"         # هماهنگی با black
 line_length = 120
+combine_as_imports = true # ترکیب import های مشابه
+force_single_line = false # جلوگیری از تک‌خطی‌کردن اجباری
 
 [tool.black]
 line-length = 120
@@ -16,17 +17,19 @@ exclude = '''
   | \.venv
   | build
   | dist
-)/
+)/  # جلوگیری از فرمت‌کردن فایل‌های غیرمرتبط
 '''
 
 [tool.mypy]
 files = ["src/"]
-ignore_missing_imports = true
-strict = true
+ignore_missing_imports = true # نادیده‌گرفتن import های نامشخص
+strict = true                 # فعال‌کردن بررسی‌های سخت‌گیرانه
 warn_unused_ignores = true
 show_error_codes = true
+follow_imports = "silent"     # کاهش سر و صدای گزارش‌ها در importها
 
 
 [tool.pyright]
 typeCheckingMode = "basic"
-reportUnusedVariable = "warning"
+reportUnusedImport = "none"      # غیرفعال‌کردن هشدارهای import های بلااستفاده
+reportUnusedVariable = "warning" # هشدار برای متغیرهای بلااستفاده

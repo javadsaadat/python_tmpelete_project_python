@@ -1,0 +1,11 @@
+[
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "src.main",
+        "description": "src.main",
+        "peekOfCode": "def main() -> None:\n    print(\"Hello World\")",
+        "detail": "src.main",
+        "documentation": {}
+    }
+]
