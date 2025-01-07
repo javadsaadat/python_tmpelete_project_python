@@ -25,6 +25,11 @@
     "python.linting.flake8Path": "${workspaceFolder}/venv/bin/flake8", // مسیر ابزار Flake8
     "python.linting.mypyPath": "${workspaceFolder}/venv/bin/mypy", // مسیر ابزار MyPy
     "python.analysis.typeCheckingMode": "strict", // فعال‌سازی بررسی تایپ‌ها
+    "python.sortImports": true,
+    "python.linting.pylintEnabled": false,
+    "editor.rulers": [
+        120
+    ],
     "terminal.integrated.env.linux": {
         "PYTHONPATH": "${workspaceFolder}/src"
     },
@@ -33,5 +38,5 @@
     },
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}/src"
-    }
+    },
 }
