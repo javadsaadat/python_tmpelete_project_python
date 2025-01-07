@@ -1,0 +1,40 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" # Forward host port 8000 to container port 8000
+    env_file:
+      - .env
+    volumes:
+      - .:/app # Sync files between host and container for development
+    command: python src/main.py
+    depends_on:
+      - db # وابسته به سرویس دیتابیس (در صورت نیاز)
+    environment:
+      - PYTHONPATH=/app/src
+  # db:
+  #   image: postgres:15
+  #   container_name: postgres_db
+  #   environment:
+  #     POSTGRES_USER: your_user
+  #     POSTGRES_PASSWORD: your_password
+  #     POSTGRES_DB: your_database
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - postgres_data:/var/lib/postgresql/data
+
+  #   test:
+  #     build:
+  #       context: .
+  #       dockerfile: Dockerfile
+  #     volumes:
+  #       - .:/app
+  #     command: pytest tests/
+
+volumes:
+  postgres_data: # این بخش برای ذخیره‌سازی داده‌های دیتابیس استفاده می‌شود.

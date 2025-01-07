@@ -1,0 +1,37 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#ff771c",
+        "titleBar.activeBackground": "#ffc526",
+        "titleBar.activeForeground": "#FDF8FC"
+    },
+    "python.envFile": "${workspaceFolder}/.env", // متغیرهای محیطی
+    "editor.formatOnSave": true, // فرمت خودکار هنگام ذخیره فایل
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always" // مرتب کردن importها
+    },
+    "python.testing.unittestEnabled": true, // فعال کردن تست
+    "python.testing.pytestEnabled": true, // فعال کردن Pytest
+    "python.testing.autoTestDiscoverOnSaveEnabled": true, // کشف خودکار تست‌ها
+    "python.analysis.autoImportCompletions": true, // تکمیل خودکار importها
+    "editor.fontSize": 14, // اندازه فونت مخصوص این پروژه
+    "editor.tabSize": 4, // تعداد فاصله تب در این پروژه
+    "files.autoSave": "onFocusChange", // ذخیره خودکار فایل‌ها
+    "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python", // مسیر محیط مجازی
+    "python.formatting.provider": "black", // فرمت کد با Black
+    "python.formatting.blackPath": "${workspaceFolder}/venv/bin/black", // مسیر ابزار Black
+    "python.linting.enabled": true, // فعال‌سازی Linting
+    "python.linting.flake8Enabled": true, // استفاده از Flake8
+    "python.linting.mypyEnabled": true, // استفاده از MyPy
+    "python.linting.flake8Path": "${workspaceFolder}/venv/bin/flake8", // مسیر ابزار Flake8
+    "python.linting.mypyPath": "${workspaceFolder}/venv/bin/mypy", // مسیر ابزار MyPy
+    "python.analysis.typeCheckingMode": "strict", // فعال‌سازی بررسی تایپ‌ها
+    "terminal.integrated.env.linux": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+    },
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}\\src"
+    },
+    "terminal.integrated.env.osx": {
+        "PYTHONPATH": "${workspaceFolder}/src"
+    }
+}
