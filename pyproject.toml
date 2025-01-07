@@ -25,3 +25,8 @@ ignore_missing_imports = true
 strict = true
 warn_unused_ignores = true
 show_error_codes = true
+
+
+[tool.pyright]
+typeCheckingMode = "basic"
+reportUnusedVariable = "warning"
