@@ -1,8 +1,19 @@
 {
     "recommendations": [
-        "ms-python.python",
-        "ms-python.black-formatter",
-        "ms-python.isort",
-        "ms-pyright.pyright"
+        "barnuri.python-import-helper", // کمک به افزودن خودکار بازنمایی های Python
+        "codeium.codeium", // اتمام خودکار و استفاده از هوش مصنوعی برای کدنویسی
+        "codeium.windsurf-pyright", // سرور زبانی Python برای Windsurf
+        "diogonolasco.pylint", // تولید خودکار فایل‌های __init__.py و وارد کردن بازنمایی‌ها
+        "donjayamanne.python-extension-pack", // مجموعه‌ای از افزونه‌های مفید برای Python
+        "franneck94.python-config", // ایجاد فایل‌های پیکربندی Python
+        "matangover.mypy", // کنترل نوع با mypy
+        "mathiasfrohlich.python", // کاربرد با مسیرهای Python
+        "ms-python.python", // افزونه‌ای جامع برای ویرایش و دباگ Python
+        "ms-python.autopep8", // فرمت‌بندی خودکار بر اساس autopep8
+        "ms-python.black-formatter", // فرمت‌بندی با استفاده از Black
+        "ms-python.flake8", // بهینه‌سازی و تصحیح اشکالات واحدتوصیفی Python
+        "ms-python.isort", // ساماندهی واردات‌های Python
+        "ms-python.python-debugger", // افزونه دباگر برای Python
+        "ms-python.pylance" // سرور زبانی با عملکرد بالا برای Python
     ]
 }

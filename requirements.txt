@@ -1,0 +1,7 @@
+pylint               # For diogonolasco.pylint
+mypy                 # For matangover.mypy
+pyright              # For ms-python.pyright
+autopep8             # For ms-python.autopep8
+black                # For ms-python.black-formatter
+flake8               # For ms-python.flake8
+isort 

@@ -9,6 +9,11 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "always" // مرتب کردن importها
     },
+    "pylint.path": [
+        "~/.env/python",
+        "-m",
+        "pylint"
+    ],
     "python.testing.unittestEnabled": true, // فعال کردن تست
     "python.testing.pytestEnabled": true, // فعال کردن Pytest
     "python.testing.autoTestDiscoverOnSaveEnabled": true, // کشف خودکار تست‌ها
@@ -17,11 +22,9 @@
     "editor.tabSize": 4, // تعداد فاصله تب در این پروژه
     "files.autoSave": "onFocusChange", // ذخیره خودکار فایل‌ها
     "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python", // مسیر محیط مجازی
-    "python.formatting.provider": "black", // فرمت کد با Black
+    "black-formatter.interpreter": [],
     "black-formatter.path": [
-        "-m",
-        "black",
-        "~/.env/python"
+        "black"
     ],
     "mypy.enabled": true, // فعال‌سازی Linting
     "flake8.enabled": true, // فعال‌سازی Linting
@@ -30,6 +33,7 @@
     // "python.analysis.typeCheckingMode": "strict", // فعال‌سازی بررسی تایپ‌ها
     "isort.importStrategy": "fromEnvironment",
     "pylint.enabled": true,
+    "python.languageServer": "Pylance",
     "editor.rulers": [
         120
     ],
@@ -41,5 +45,18 @@
     },
     "terminal.integrated.env.osx": {
         "PYTHONPATH": "${workspaceFolder}/src"
+    },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "always",
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off",
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
+    "files.associations": {
+        "*.py": "python"
     },
 }

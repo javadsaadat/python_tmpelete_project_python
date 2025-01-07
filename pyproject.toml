@@ -22,14 +22,19 @@ exclude = '''
 
 [tool.mypy]
 files = ["src/"]
-# ignore_missing_imports = true # نادیده‌گرفتن import های نامشخص
-strict = true # فعال‌کردن بررسی‌های سخت‌گیرانه
-# warn_unused_ignores = true
-# show_error_codes = true
-# follow_imports = "silent"     # کاهش سر و صدای گزارش‌ها در importها
+ignore_missing_imports = true # نادیده‌گرفتن import های نامشخص
+strict = true                 # فعال‌کردن بررسی‌های سخت‌گیرانه
+warn_unused_ignores = true
+show_error_codes = true
+follow_imports = "normal"
+disallow_untyped_defs = false
 
 
 [tool.pyright]
 typeCheckingMode = "basic"
 reportUnusedImport = "none"      # غیرفعال‌کردن هشدارهای import های بلااستفاده
 reportUnusedVariable = "warning" # هشدار برای متغیرهای بلااستفاده
+
+
+[tool.pylint]
+disable = ["C0116", "C0114"]
