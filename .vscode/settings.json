@@ -18,15 +18,18 @@
     "files.autoSave": "onFocusChange", // ذخیره خودکار فایل‌ها
     "python.defaultInterpreterPath": "${workspaceFolder}/venv/bin/python", // مسیر محیط مجازی
     "python.formatting.provider": "black", // فرمت کد با Black
-    "python.formatting.blackPath": "${workspaceFolder}/venv/bin/black", // مسیر ابزار Black
-    "python.linting.enabled": true, // فعال‌سازی Linting
-    "python.linting.flake8Enabled": true, // استفاده از Flake8
-    "python.linting.mypyEnabled": true, // استفاده از MyPy
-    "python.linting.flake8Path": "${workspaceFolder}/venv/bin/flake8", // مسیر ابزار Flake8
-    "python.linting.mypyPath": "${workspaceFolder}/venv/bin/mypy", // مسیر ابزار MyPy
-    "python.analysis.typeCheckingMode": "strict", // فعال‌سازی بررسی تایپ‌ها
-    "python.sortImports": true,
-    "python.linting.pylintEnabled": false,
+    "black-formatter.path": [
+        "-m",
+        "black",
+        "~/.env/python"
+    ],
+    "mypy.enabled": true, // فعال‌سازی Linting
+    "flake8.enabled": true, // فعال‌سازی Linting
+    "docker.enableDockerComposeLanguageService": true, // فعال‌سازی Linting
+    // "mypyright.venvPath": "${workspaceFolder}/venv/bin/mypyright", // مسیر ابزار MyPyRight
+    // "python.analysis.typeCheckingMode": "strict", // فعال‌سازی بررسی تایپ‌ها
+    "isort.importStrategy": "fromEnvironment",
+    "pylint.enabled": true,
     "editor.rulers": [
         120
     ],
